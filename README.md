@@ -4,7 +4,7 @@ Two convenient way to generate DNA nucleotide sequences. Requires Ruby 2.2.0 or 
 
 ### Output to command line
 ```bash
-ruby generate_random_dba.rb
+ruby generate_random_dba.rb 10
 ```
 
 ### Output to a color webpage
