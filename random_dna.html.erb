@@ -1,13 +1,10 @@
 <%
-# CHANGE LENGTH
-length = 101 * 1000
-
 random_numbers = []
-for i in 0..length do
+# length should be set through the command line
+for i in 1..length.to_i do
   random_numbers << rand(4)
 end
 %>
-
 <% for n in random_numbers %>
   <% case n
      when 0 %>
