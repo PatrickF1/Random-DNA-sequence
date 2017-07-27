@@ -1,0 +1,22 @@
+<%
+# CHANGE LENGTH
+length = 101 * 1000
+
+random_numbers = []
+for i in 0..length do
+  random_numbers << rand(4)
+end
+%>
+
+<% for n in random_numbers %>
+  <% case n
+     when 0 %>
+    <span style="color:red">A</span>
+  <% when 1 %>
+    <span style="color:black">C</span>
+  <% when 2 %>
+    <span style="color:green">G</span>
+  <% else %>
+    <span style="color:purple">T</span>
+  <% end %>
+<% end %>
